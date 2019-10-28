@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="my-cars-list"></ion-back-button>
+
+    </ion-buttons>
+    <ion-title> Cars </ion-title>
+    <!-- (click)="deleteStudent()" -->
+    <ion-button slot="end" (click)="deletecar()">
+      <ion-icon name="close"></ion-icon>
+    </ion-button>
+
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img src="http://www.auroracl.com/template/resources/images/news/quote1494914715.png" height="250px" />
+    <ion-card-header>
+      <ion-card-title>{{singlecar?.name}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{singlecar?.num}}
+
+
+    </ion-card-content>
+
+
+  </ion-card>
+</ion-content>
